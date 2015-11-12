@@ -1,6 +1,4 @@
-Given /^I am on the blog homepage$/ do
-visit("/posts")
-end
+
 When /^I click "New Post" link$/ do
 click_on "New Post"
 end
