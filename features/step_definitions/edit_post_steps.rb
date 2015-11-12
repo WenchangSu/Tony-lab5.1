@@ -16,7 +16,8 @@ end
 When(/^I update title to "(.*?)" and content to "(.*?)"$/) do |arg1, arg2|
 	fill_in "Title", :with => arg1 		#title
 	fill_in "Content", :with => arg2	#content
-	click_button "Update Post" # click_on "Update Post" also OK
+	#click_button "Update Post" # click_on "Update Post" also OK
+	click_on "Edit Post"
 	@new_title = arg1; @new_content = arg2
 end
 
